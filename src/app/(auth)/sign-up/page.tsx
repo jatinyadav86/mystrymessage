@@ -96,7 +96,7 @@ function Page() {
                         <p className='text-base font-semibold mr-7'>Sign up with Google</p>
                     </div>
                     <div onClick={() => signIn('github')} className="facebook w-full h-12 border border-[#878787] rounded-full flex justify-around items-center cursor-pointer hover:border-black">
-                        <Image src="https://accounts.scdn.co/sso/images/new-facebook-icon.eae8e1b6256f7ccf01cf81913254e70b.svg" alt="Google Icon" width={72} height={72} />
+                        <Image src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png" alt="Google Icon" width={72} height={72} />
                         <p className='text-base font-semibold mr-7'>Sign up with GitHub</p>
                     </div>
                 </div>

@@ -92,14 +92,15 @@ function Page() {
                 </div>
                 <div className="w-72 flex flex-col items-center justify-center gap-2">
                     <div onClick={() => signIn('google')} className="google w-full h-12 border border-[#878787] rounded-full flex justify-around items-center cursor-pointer hover:border-black">
-                        <Image src="https://accounts.scdn.co/sso/images/new-google-icon.72fd940a229bc94cf9484a3320b3dccb.svg" alt="Google Icon" width={72} height={72} />
+                        <Image src="https://accounts.scdn.co/sso/images/new-google-icon.72fd940a229bc94cf9484a3320b3dccb.svg" alt="Google Icon" width={32} height={32} />
                         <p className='text-base font-semibold mr-7'>Sign up with Google</p>
                     </div>
                     <div onClick={() => signIn('github')} className="facebook w-full h-12 border border-[#878787] rounded-full flex justify-around items-center cursor-pointer hover:border-black">
-                        <Image src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png" alt="Google Icon" width={72} height={72} />
+                        <Image src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png" alt="Google Icon" width={32} height={32} />
                         <p className='text-base font-semibold mr-7'>Sign up with GitHub</p>
                     </div>
                 </div>
+                <p>or Sign up with gmail</p>
                 <Form {...form}>
                     <form onSubmit={form.handleSubmit(onSubmit)} className="w-full space-y-6">
                         <FormField
@@ -137,7 +138,7 @@ function Page() {
                                 <FormItem>
                                     <FormLabel>Email</FormLabel>
                                     <Input {...field} name="email" />
-                                    <p className='text-muted text-gray-400 text-sm'>We will send you a verification code</p>
+                                    <p className='text-muted text-gray-500 text-sm'>We will send you a verification code</p>
                                     <FormMessage />
                                 </FormItem>
                             )}

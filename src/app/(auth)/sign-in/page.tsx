@@ -55,20 +55,21 @@ function Page() {
       <div className="w-full max-w-md p-8 space-y-8 bg-white rounded-lg shadow-md flex justify-center items-center flex-col">
         <div className="text-center">
           <h1 className="text-4xl font-extrabold tracking-tight lg:text-5xl mb-6">
-            Join Mystry Message
+            Welcome Back to Mystry Message
           </h1>
-          <p className="mb-4">Sign in to start your anonymous adventure</p>
+          <p className="mb-4">Sign in to continue your secret conversations</p>
         </div>
         <div className="w-72 flex flex-col items-center justify-center gap-2">
           <div onClick={() => signIn('google')} className="google w-full h-12 border border-[#878787] rounded-full flex justify-around items-center cursor-pointer hover:border-black">
-            <Image src="https://accounts.scdn.co/sso/images/new-google-icon.72fd940a229bc94cf9484a3320b3dccb.svg" alt="Google Icon" width={72} height={72} />
-            <p className='text-base font-semibold mr-7'>Sign up with Google</p>
+            <Image src="https://accounts.scdn.co/sso/images/new-google-icon.72fd940a229bc94cf9484a3320b3dccb.svg" alt="Google Icon" width={32} height={32} />
+            <p className='text-base font-semibold mr-7'>Sign in with Google</p>
           </div>
           <div onClick={() => signIn('github')} className="facebook w-full h-12 border border-[#878787] rounded-full flex justify-around items-center cursor-pointer hover:border-black">
-            <Image src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png" alt="Google Icon" width={72} height={72} />
-            <p className='text-base font-semibold mr-7'>Sign up with GitHub</p>
+            <Image src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png" alt="Google Icon" width={32} height={32} />
+            <p className='text-base font-semibold mr-7'>Sign in with GitHub</p>
           </div>
         </div>
+        <p>or Sign in with gmail or username</p>
         <Form {...form}>
           <form onSubmit={form.handleSubmit(onSubmit)} className="w-full space-y-6">
             <FormField
